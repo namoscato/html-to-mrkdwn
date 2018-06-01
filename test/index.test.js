@@ -1,15 +1,9 @@
 const fs = require('fs')
+const { join } = require('path')
+
 const mrkdwn = require('..')
 
-fs.readdirSync('test/fixtures').forEach(file => {
-  if (!file.endsWith('.mrkdwn')) return
-
-  test(file.replace('.mrkdwn', ''), () => {
-    const content = fs.readFileSync(`test/fixtures/${file}`).toString()
-    const [input, output] = content.split('====')
-    expect(mrkdwn(input).text.trim()).toEqual(output.trim())
-  })
-})
+generateTests('test/fixtures')
 
 test('returns images', () => {
   const html = `
@@ -21,3 +15,27 @@ test('returns images', () => {
   const { image } = mrkdwn(html)
   expect(image).toEqual('https://example.com/first.gif')
 })
+
+function generateTests (directory, flavor) {
+  const subdirectories = []
+
+  fs.readdirSync(directory).forEach(file => {
+    const filePath = join(directory, file)
+
+    if (fs.lstatSync(filePath).isDirectory()) {
+      subdirectories.push([filePath, file])
+    }
+
+    if (!file.endsWith('.mrkdwn')) {
+      return
+    }
+
+    test(`${flavor ? flavor + '/' : ''}${file.replace('.mrkdwn', '')}`, () => {
+      const content = fs.readFileSync(filePath).toString()
+      const [input, output] = content.split('====')
+      expect(mrkdwn(input, flavor).text.trim()).toEqual(output.trim())
+    })
+  })
+
+  subdirectories.map(subdirectory => generateTests.apply(subdirectory, subdirectory))
+}
