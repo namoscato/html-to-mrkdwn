@@ -16,8 +16,8 @@ mrkdwn(html)
 
 ```json
 {
-  text: "*Hello* <https://example.com|cruel> _world_!\n\n<https://media.giphy.com/media/5xtDarEbygs3Pu7p3jO/giphy.gif>",
-  image: "https://media.giphy.com/media/5xtDarEbygs3Pu7p3jO/giphy.gif",
+  "text": "*Hello* <https://example.com|cruel> _world_!\n\n<https://media.giphy.com/media/5xtDarEbygs3Pu7p3jO/giphy.gif>",
+  "image": "https://media.giphy.com/media/5xtDarEbygs3Pu7p3jO/giphy.gif",
 }
 ```
 
@@ -25,4 +25,5 @@ mrkdwn(html)
 
 Application-specific HTML flavors are supported by including an optional second argument. Supported flavors include:
 
-* `github`
+* `github` per [GitHub Flavored Markdown](https://github.github.com/gfm/)
+* `jira` per [rendered Jira comments](https://developer.atlassian.com/cloud/jira/platform/rest/#span-class-parameter-name-expand-span-15)
