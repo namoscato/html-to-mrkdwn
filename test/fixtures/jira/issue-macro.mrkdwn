@@ -1,0 +1,9 @@
+<span class="jira-issue-macro" data-jira-key="JIRA-123" >
+  <a href="https://atlassian.net/browse/JIRA-123" class="jira-issue-macro-key issue-link">
+    <img class="icon" src="https://atlassian.net/secure/viewavatar" />
+    JIRA-123
+  </a>
+  <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-complete jira-macro-single-issue-export-pdf">Open</span>
+</span>
+====
+<https://atlassian.net/browse/JIRA-123|JIRA-123>

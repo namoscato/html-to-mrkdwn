@@ -1,6 +1,6 @@
 {
-  "name": "html-to-mrkdwn",
-  "version": "1.0.0",
+  "name": "amo-html-to-mrkdwn",
+  "version": "3.0.0",
   "description": "Convert HTML to Slack flavored mrkdwn",
   "main": "./lib",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github-slack/html-to-mrkdown.git"
+    "url": "git+https://github.com/namoscato/html-to-mrkdwn.git"
   },
   "keywords": [
     "html",
@@ -19,16 +19,15 @@
   "author": "Brandon Keepers",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/github-slack/html-to-mrkdown/issues"
+    "url": "https://github.com/namoscato/html-to-mrkdwn/issues"
   },
-  "homepage": "https://github.com/github-slack/html-to-mrkdown#readme",
+  "homepage": "https://github.com/namoscato/html-to-mrkdwn",
   "dependencies": {
     "jsdom": "^11.6.2",
-    "turndown": "^4.0.0-rc.3",
-    "turndown-plugin-gfm": "1.0.1"
+    "turndown": "^4.0.2"
   },
   "devDependencies": {
-    "jest": "^22.0.4",
+    "jest": "^23.1.0",
     "standard": "^11.0.0"
   },
   "standard": {
