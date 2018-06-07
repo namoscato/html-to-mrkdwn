@@ -1,9 +1,11 @@
-<span class="jira-issue-macro" data-jira-key="JIRA-123" >
-  <a href="https://atlassian.net/browse/JIRA-123" class="jira-issue-macro-key issue-link">
-    <img class="icon" src="https://atlassian.net/secure/viewavatar" />
-    JIRA-123
-  </a>
-  <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-complete jira-macro-single-issue-export-pdf">Open</span>
-</span>
+<p>Here is an issue:
+    <span class="jira-issue-macro resolved">
+                <a href="https://atlassian.net/browse/JIRA-123" class="jira-issue-macro-key issue-link" >
+            <img class="icon" src="https://atlassian.net/secure/viewavatar" />
+            JIRA-123
+        </a>
+                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-macro-single-issue-export-pdf">Released</span>
+            </span>
+.</p>
 ====
-<https://atlassian.net/browse/JIRA-123|JIRA-123>
+Here is an issue: <https://atlassian.net/browse/JIRA-123|JIRA-123> .
