@@ -2,6 +2,8 @@
 
 Convert HTML to Slack's [mrkdwn](https://api.slack.com/docs/message-formatting) format.
 
+![screenshots](screenshots.jpg)
+
 ```js
 const mrkdwn = require('amo-html-to-mrkdwn')
 
