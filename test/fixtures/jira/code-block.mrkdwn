@@ -1,7 +1,8 @@
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
 <pre class="code-python">
 <span class="code-keyword">def</span> some_function(x):
-  <span class="code-keyword">return</span> x+1</pre>
+  <span class="code-keyword">return</span> x+1
+</pre>
 </div></div>
 ====
 ```
