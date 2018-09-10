@@ -31,8 +31,8 @@ The module exports a function that takes the following parameters:
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-| `html` | `string` | HTML string |
-| `flavor` | `string` | Optional application-specific HTMl flavor |
+| `html` | `string` | Required HTML string |
+| `flavor` | `string` | Optional application-specific HTML flavor |
 | `options` | `object` | Optional flavor options |
 
 ## Flavors
@@ -50,5 +50,5 @@ per [rendered Jira comments](https://developer.atlassian.com/cloud/jira/platform
 #### Options
 
 | Option | Type | Example | Description |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | `jiraBaseUrl` | `string` | `https://subdomain.atlassian.com` | Jira base URL used to generate absolute attachment links |
