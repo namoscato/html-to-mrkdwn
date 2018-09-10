@@ -4,6 +4,8 @@ Convert HTML to Slack's [mrkdwn](https://api.slack.com/docs/message-formatting) 
 
 ![screenshots](screenshots.jpg)
 
+## Usage
+
 ```js
 const mrkdwn = require('amo-html-to-mrkdwn')
 
@@ -23,9 +25,30 @@ mrkdwn(html)
 }
 ```
 
+## Parameters
+
+The module exports a function that takes the following parameters:
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `html` | `string` | Required HTML string |
+| `flavor` | `string` | Optional application-specific HTML flavor |
+| `options` | `object` | Optional flavor options |
+
 ## Flavors
 
 Application-specific HTML flavors are supported by including an optional second argument. Supported flavors include:
 
-* `github` per [GitHub Flavored Markdown](https://github.github.com/gfm/)
-* `jira` per [rendered Jira comments](https://developer.atlassian.com/cloud/jira/platform/rest/#span-class-parameter-name-expand-span-15)
+### `github`
+
+per [GitHub Flavored Markdown](https://github.github.com/gfm/)
+
+### `jira`
+
+per [rendered Jira comments](https://developer.atlassian.com/cloud/jira/platform/rest/#span-class-parameter-name-expand-span-15)
+
+#### Options
+
+| Option | Type | Example | Description |
+| --- | --- | --- | --- |
+| `jiraBaseUrl` | `string` | `https://subdomain.atlassian.com` | Jira base URL used to generate absolute attachment links |
