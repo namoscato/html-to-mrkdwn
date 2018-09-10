@@ -33,7 +33,7 @@ function generateTests (directory, flavor) {
     test(`${flavor ? flavor + '/' : ''}${file.replace('.mrkdwn', '')}`, () => {
       const content = fs.readFileSync(filePath).toString()
       const [input, output] = content.split('====')
-      expect(mrkdwn(input, flavor).text.trim()).toEqual(output.trim())
+      expect(mrkdwn(input, flavor, { jiraBaseUrl: 'https://www.atlassian.com' }).text.trim()).toEqual(output.trim())
     })
   })
 
