@@ -1,4 +1,17 @@
-<ol><li>item 1</li><li>item 2</li></ol>
+<ol>
+<li>item 1
+<pre><code>code
+block</code></pre>
+<p>footer</p></li>
+<li>item 2</li>
+</ol>
 ====
 1. item 1
+
+```
+code
+block
+```
+
+    footer
 2. item 2
