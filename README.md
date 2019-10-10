@@ -1,4 +1,4 @@
-# html-to-mrkdwn [![Build Status](https://travis-ci.org/namoscato/html-to-mrkdwn.svg?branch=master)](https://travis-ci.org/namoscato/html-to-mrkdwn)
+# html-to-mrkdwn [![Actions Status](https://github.com/namoscato/html-to-mrkdwn/workflows/Node%20CI/badge.svg)](https://github.com/namoscato/html-to-mrkdwn/actions)
 
 Convert HTML to Slack's [mrkdwn](https://api.slack.com/docs/message-formatting) format.
 
