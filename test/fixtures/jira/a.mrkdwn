@@ -1,5 +1,6 @@
 <a href="https://example.com">Hello</a>
 <a href="/secure/attachment/123" data-attachment-type="file">subsetMissingES<sup><img class="rendericon" src="/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a>
 <a href="/secure/attachment/456" title="456.png" file-preview-type="image"><jira-attachment-thumbnail url="https://www.atlassian.net/secure/thumbnail/456"><img src="https://www.atlassian.net/secure/thumbnail/456" data-attachment-type="thumbnail" /></jira-attachment-thumbnail></a>
+<span class="image-wrap"><img src="/secure/attachment/789/789_file.png" /></span>
 ====
-<https://example.com|Hello> <https://www.atlassian.com/secure/attachment/123|subsetMissingES ⬇️> <https://www.atlassian.com/secure/attachment/456|🖼 456.png ⬇️>
+<https://example.com|Hello> <https://www.atlassian.com/secure/attachment/123|subsetMissingES ⬇️> <https://www.atlassian.com/secure/attachment/456|🖼 456.png ⬇️> <https://www.atlassian.com/secure/attachment/789/789_file.png|🖼 789_file.png ⬇️>
