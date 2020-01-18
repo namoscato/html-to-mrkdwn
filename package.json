@@ -27,6 +27,9 @@
     "jsdom": "^16.0.0",
     "turndown": "^5.0.3"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
     "jest": "^24.9.0",
     "standard": "^14.3.1"
