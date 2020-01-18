@@ -24,8 +24,11 @@
   "homepage": "https://github.com/namoscato/html-to-mrkdwn",
   "dependencies": {
     "cli-table": "github:Automattic/cli-table",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.0.0",
     "turndown": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=10"
   },
   "devDependencies": {
     "jest": "^24.9.0",
