@@ -25,7 +25,7 @@
   "dependencies": {
     "cli-table": "github:Automattic/cli-table",
     "jsdom": "^16.0.0",
-    "turndown": "^6.0.0"
+    "turndown": "^7.0.0"
   },
   "engines": {
     "node": ">=10"
