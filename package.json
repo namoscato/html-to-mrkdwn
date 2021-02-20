@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/namoscato/html-to-mrkdwn",
   "dependencies": {
-    "cli-table": "github:Automattic/cli-table",
+    "cli-table": "^0.3.5",
     "jsdom": "^16.0.0",
     "turndown": "^6.0.0"
   },
